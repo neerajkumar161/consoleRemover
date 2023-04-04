@@ -8,7 +8,7 @@ export async function removeConsolesFromDocument(document: vscode.TextDocument):
     return
   }
 
-	/* Replacing the current text with updated text */
+	/* Replacing the current text with updated textt */
   const updatedText = currentDocText.replace(consoleDotLogRegex, '')
 	
   const startPosition = new vscode.Position(0, 0)
