@@ -23,13 +23,10 @@ jobs:
     - name: Install dependencies
       run: pnpm install
       
-    - name: Lint Check
-      id: run-lint-check
-      run: pnpm run lint
-    
-    - name: Check for Lint check failure
-      if: ${{step.run-lint-check.output.status}} == 'failure'
-      run: exit 1
+    - name: Run linters
+      uses: wearerequired/lint-action@v2
+      with:
+        eslint: true
     
     - name: Run Unit Tests
       id: run-unit-tests
