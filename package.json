@@ -1,0 +1,60 @@
+{
+  "name": "console-remover",
+  "displayName": "Console Remover",
+  "description": "A extension to remove all console in your JavaScript and TypeScript Project",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "publisher": "neerajkumar161",
+  "author": {
+    "name": "Neeraj Kumar",
+    "email": "ennkay161@gmail.com"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "removeConsoleLogsCurrentFile",
+        "title": "Console Remover: Remove console.log from current document"
+      },
+      {
+        "command": "removeConsoleLogsOpenedFiles",
+        "title": "Console Remover: Remove console.log from all opened documents"
+      },
+      {
+        "command": "removeConsoleLogsFromProject",
+        "title": "Console Remover: Remove console.log from entire project"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.76.0",
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4",
+    "@vscode/test-electron": "^2.2.2"
+  }
+}
