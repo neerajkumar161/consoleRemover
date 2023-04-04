@@ -28,7 +28,7 @@ jobs:
       run: pnpm run lint
     
     - name: Check for Lint check failure
-      if: step.run-lint-check.output.status == 'failure'
+      if: ${{step.run-lint-check.output.status}} == 'failure'
       run: exit 1
     
     - name: Run Unit Tests
@@ -36,5 +36,5 @@ jobs:
       run: pnpm run test
     
     - name: Check for unit test failure
-      if: step.run-unit-tests.output.status == 'failure'
+      if: ${{step.run-unit-tests.output.status}} == 'failure'
       run: exit 1
