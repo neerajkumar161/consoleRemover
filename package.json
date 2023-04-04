@@ -4,7 +4,7 @@
   "description": "A extension to remove all console in your JavaScript and TypeScript Project",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.0.0"
   },
   "publisher": "neerajkumar161",
   "author": {

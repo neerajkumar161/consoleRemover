@@ -17,12 +17,15 @@ jobs:
       with:
         node-version: 16.x
     
+    - name: Install PNPM
+      run: npm i -g pnpm
+    
     - name: Install dependencies
-      run: yarn install
+      run: pnpm install
       
     - name: Lint Check
       id: run-lint-check
-      run: yarn run lint
+      run: pnpm run lint
     
     - name: Check for Lint check failure
       if: step.run-lint-check.output.status == 'failure'
@@ -30,7 +33,7 @@ jobs:
     
     - name: Run Unit Tests
       id: run-unit-tests
-      run: yarn run test
+      run: pnpm run test
     
     - name: Check for unit test failure
       if: step.run-unit-tests.output.status == 'failure'
