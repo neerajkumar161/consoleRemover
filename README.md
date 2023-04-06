@@ -19,7 +19,7 @@ This is a VSCode extension that removes all `console.log` statements from your J
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 - Added command to remove console.log from single document.
 - Added command to remove console.log from opened documents.

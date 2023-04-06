@@ -3,13 +3,18 @@
   "displayName": "Console Remover",
   "description": "A extension to remove all console in your JavaScript and TypeScript Project",
   "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.76.0"
-  },
+  "icon": "images/logo.png",
   "publisher": "neerajkumar161",
   "author": {
     "name": "Neeraj Kumar",
     "email": "ennkay161@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/neerajkumar161/consoleRemover.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.76.0"
   },
   "categories": [
     "Programming Languages",
