@@ -1,7 +1,7 @@
 import * as vscode from 'vscode'
 
 export async function removeConsolesFromDocument(document: vscode.TextDocument): Promise<void> {
-  const consoleDotLogRegex = /console\.log\s*\([\s\S]*?\)(?:\s*;)?/g
+  const consoleDotLogRegex = /console\.log\s*\([\s\S]*?\)(?:\s*;)?\s*\)?/g
   const currentDocText = document.getText()
 
   if (!consoleDotLogRegex.test(currentDocText)) {
