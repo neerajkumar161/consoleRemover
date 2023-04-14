@@ -27,7 +27,7 @@ This is a VSCode extension that removes all `console.log` statements from your J
 - Test case for a function for CI/CI pipeline.
 - Class for creating temporary file while testing.
 
-### 0.0.2 - [2023-03-06]
+### 0.0.2 - [2023-03-14]
 
 - Fixed console remover for functions calls inside it.
 - Example: console.log(myFunction())
