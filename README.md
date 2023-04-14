@@ -26,12 +26,12 @@ This is a VSCode extension that removes all `console.log` statements from your J
 - Added command to remove console.log from entire project.
 - Test case for a function for CI/CI pipeline.
 - Class for creating temporary file while testing.
-- Added `.github/workflows/main.yaml` for Github action CI/CD pipeline. 
 
-## 0.0.2 - 2023-03-14
-- Fixed console remover for functions calls inside it
-  Example: console.log(myFunction())
-  
+### 0.0.2 - [2023-03-06]
+
+- Fixed console remover for functions calls inside it.
+- Example: console.log(myFunction())
+
 # Contributing to Console Remover
 
 🎉👍 First off, thanks for taking the time to contribute! 🎉👍
