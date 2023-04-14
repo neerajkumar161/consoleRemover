@@ -2,7 +2,7 @@
   "name": "console-remover",
   "displayName": "Console Remover",
   "description": "A extension to remove all console in your JavaScript and TypeScript Project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/logo.png",
   "publisher": "neerajkumar161",
   "author": {
