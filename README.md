@@ -28,7 +28,10 @@ This is a VSCode extension that removes all `console.log` statements from your J
 - Class for creating temporary file while testing.
 - Added `.github/workflows/main.yaml` for Github action CI/CD pipeline. 
 
-
+## 0.0.2 - 2023-03-14
+- Fixed console remover for functions calls inside it
+  Example: console.log(myFunction())
+  
 # Contributing to Console Remover
 
 🎉👍 First off, thanks for taking the time to contribute! 🎉👍
